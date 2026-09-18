@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrical Engineering Calculator (วสท. 022001-22)</title>
+    <meta name="description" content="เครื่องคำนวณระบบไฟฟ้าและตรวจสอบขนาดสาย ท่อ เซอร์กิตเบรกเกอร์ และแรงดันตก ตามมาตรฐาน วสท. 022001-22 พ.ศ. 2564" />
+    <meta property="og:title" content="Electrical Engineering Calculator (วสท. 022001-22)" />
+    <meta property="og:description" content="เครื่องคำนวณระบบไฟฟ้าและตรวจสอบขนาดสาย ท่อ เซอร์กิตเบรกเกอร์ และแรงดันตก ตามมาตรฐาน วสท. 022001-22 พ.ศ. 2564" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      // Gracefully handle WebSocket / HMR rejections in preview proxy environments
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        var isWs = reason && (
+          (typeof reason === 'string' && (reason.indexOf('WebSocket') !== -1 || reason.indexOf('ws') !== -1)) ||
+          (reason.message && (reason.message.indexOf('WebSocket') !== -1 || reason.message.indexOf('ws') !== -1)) ||
+          (reason.target && typeof WebSocket !== 'undefined' && reason.target instanceof WebSocket)
+        );
+        if (isWs) {
+          console.debug('[Vite HMR/WebSocket Rejection handled]:', reason);
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        if (event.target && typeof WebSocket !== 'undefined' && event.target instanceof WebSocket) {
+          console.debug('[Vite HMR/WebSocket Error handled]');
+          event.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased font-['Prompt',sans-serif]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

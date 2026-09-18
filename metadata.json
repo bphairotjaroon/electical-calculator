@@ -1,0 +1,8 @@
+{
+  "name": "Remix Electrical Engineering Calculator (วสท. 022001-22)",
+  "description": "เครื่องคำนวณระบบไฟฟ้าและตรวจสอบขนาดสาย ท่อ เซอร์กิตเบรกเกอร์ และแรงดันตก ตามมาตรฐาน วสท. 022001-22 พ.ศ. 2564",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
