@@ -1,10 +1,11 @@
-/**
+﻿/**
  * Electrical Engineering Calculator - Types & Interfaces
  * Standard: วสท. 022001-22 (มาตรฐานการติดตั้งทางไฟฟ้าสำหรับประเทศไทย พ.ศ. 2564)
  */
 
 export type SourceStatus = 
   | 'VERIFIED_STANDARD_DATA'
+  | 'USER_DEFINED_DATA'
   | 'DEMO_DATA'
   | 'NEEDS_SOURCE_REVIEW';
 
@@ -114,10 +115,10 @@ export interface EngineeringCheckStatus {
 export interface MultiStageStatus {
   calculationStatus: 'CALCULATED' | 'CALCULATION COMPLETE' | 'FAIL';
   standardStatus: 'REFERENCE ONLY' | 'NOT YET VERIFIED' | 'VERIFIED_STANDARD';
-  cableStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
-  breakerStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
+  cableStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'PRELIMINARY PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
+  breakerStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'PRELIMINARY PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
   voltageDropStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'FAIL';
-  conduitStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
+  conduitStatus: 'NOT CHECKED' | 'PENDING' | 'PASS' | 'PRELIMINARY PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
   finalStatus: 'ENGINEERING REVIEW REQUIRED' | 'PENDING ENGINEERING CHECK' | 'PASS' | 'FAIL' | 'INSUFFICIENT_VERIFIED_DATA';
 }
 
@@ -178,3 +179,5 @@ export interface DatabaseVersionInfo {
   totalRecords: number;
   notes: string;
 }
+
+

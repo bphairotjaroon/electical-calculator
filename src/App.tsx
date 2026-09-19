@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Electrical Engineering Calculator
  * Standard: วสท. 022001-22 (พ.ศ. 2564)
  * Author: Professional Electrical Engineering Suite for Thai Engineers
@@ -189,7 +189,6 @@ const handleForwardToConduitSizing = (
   initialPhase={currentPhase}
   cables={cables}
   conduits={conduits}
-  onConduitFillCalculated={handleConduitFillCalculated}
   onAskAi={handleOpenAiWithTrace}
 />
           )}
@@ -230,8 +229,7 @@ const handleForwardToConduitSizing = (
           <p>
             Electrical Engineering Calculator • อ้างอิงมาตรฐาน วสท. 022001-22 (พ.ศ. 2564) • Data Trust Engine Active
           </p>
-        </footer>
-      </div>
+        </footer>`r`n`r`n      </div>
 
       {/* AI Assistant Modal */}
       <AiExplanationModal
@@ -243,3 +241,5 @@ const handleForwardToConduitSizing = (
     </div>
   );
 }
+
+

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { CableRecord, ConduitRecord } from '../types';
 import { 
   DATABASE_VERSION_INFO, 
@@ -217,7 +217,7 @@ export const StandardsDbPage: React.FC<StandardsDbPageProps> = ({ cables, condui
                       ~{cbl.approxOverallDiameterMm} mm / {cbl.approxAreaMm2} mm²
                     </td>
                     <td className="px-4 py-3 text-slate-400">
-                      {cbl.resistanceOhmPerKm} / {cbl.reactanceOhmPerKm}
+                      {cbl.resistancePerKm} / {cbl.reactancePerKm}
                     </td>
                     <td className="px-4 py-3 text-slate-400 font-sans">
                       <span className="text-slate-200 block font-mono">{cbl.table}</span>
@@ -257,7 +257,7 @@ export const StandardsDbPage: React.FC<StandardsDbPageProps> = ({ cables, condui
                     <td className="px-4 py-3 font-bold text-amber-300">{cdt.type}</td>
                     <td className="px-4 py-3 text-slate-100 font-semibold">{cdt.nominalSizeInch}</td>
                     <td className="px-4 py-3 text-slate-400">{cdt.nominalSizeMm} mm</td>
-                    <td className="px-4 py-3 text-slate-400">{cdt.outsideDiameterMm} mm</td>
+                    <td className="px-4 py-3 text-slate-400">{cdt.insideDiameterMm} mm</td>
                     <td className="px-4 py-3 text-slate-300 font-semibold">{cdt.insideDiameterMm} mm</td>
                     <td className="px-4 py-3 text-cyan-300 font-bold text-sm">
                       {cdt.internalAreaMm2.toFixed(1)} mm²
@@ -426,3 +426,4 @@ export const StandardsDbPage: React.FC<StandardsDbPageProps> = ({ cables, condui
     </div>
   );
 };
+
