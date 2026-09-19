@@ -224,11 +224,12 @@ export const CableSizingPage: React.FC<CableSizingPageProps> = ({
                 className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-xs sm:text-sm text-slate-200 focus:outline-hidden focus:border-amber-500/50 cursor-pointer"
               >
                 <option value={1}>1-3 เส้นนำกระแสในท่อ (Cg = 1.00)</option>
-                <option value={4}>4-6 เส้นนำกระแสในท่อ (Cg = 0.80)</option>
-                <option value={7}>7-9 เส้นนำกระแสในท่อ (Cg = 0.70)</option>
-                <option value={10}>10-12 เส้นนำกระแสในท่อ (Cg = 0.50)</option>
-                <option value={16}>13-16 เส้นนำกระแสในท่อ (Cg = 0.45)</option>
-                <option value={20}>20 เส้นขึ้นไป (Cg = 0.40)</option>
+<option value={4}>4-6 เส้นนำกระแสในท่อ (Cg = 0.80)</option>
+<option value={7}>7-9 เส้นนำกระแสในท่อ (Cg = 0.70)</option>
+<option value={10}>10-12 เส้นนำกระแสในท่อ (Cg = 0.50)</option>
+<option value={16}>13-16 เส้นนำกระแสในท่อ (Cg = 0.45)</option>
+<option value={17}>17-20 เส้นนำกระแสในท่อ (Cg = 0.40)</option>
+<option value={21}>21 เส้นขึ้นไป (Cg = 0.35)</option>
               </select>
             </div>
 
